@@ -52,7 +52,7 @@ GM_addStyle('.webPlayerElement .hide { display: none !important; }')
                 document.querySelector('.adSkipButton.skippable').click();
             }
     }, 100)
-    const socket = io('https://ripperino.cat6e.de/') // local dns forward for this domain directly to the nginx https proxy
+    const socket = io('https://ripperino.lan/') // local dns forward for this domain directly to the nginx https proxy
     socket.on('play', () => document.querySelector('video').play())
     socket.on('pause', () => document.querySelector('video').pause())
     socket.on('stop', () => document.querySelector('video').stop())
